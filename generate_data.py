@@ -4,8 +4,14 @@ import code # to debug: `code.interact(local=locals())`
 import os
 from pprint import pprint
 import random
-#import json
 import csv
+from faker import Faker
+
+fake = Faker()
+
+#
+# CREATE CSV FILE WITH HEADERS
+#
 
 orders_dot_csv = os.path.join(os.path.dirname(__file__), "data/orders.csv")
 print "WRITING TO CSV FILE -- %(file_name)s" % {"file_name": orders_dot_csv}
@@ -13,10 +19,56 @@ os.remove(orders_dot_csv) if os.path.isfile(orders_dot_csv) else "NO CSV FILE DE
 orders_csv = csv.writer(open(orders_dot_csv, "w"), lineterminator=os.linesep)
 orders_csv.writerow([
   "order_number",
-  "salad_name", # one of the seasonal or signature salad names, or "CUSTOM"
-  "salad_price_usd"
+  #"salad_name", # one of the seasonal or signature salad names, or "CUSTOM"
+  #"salad_price_usd",
+  #"payment_method", # one of "cash","credit-card","app"
+      #"qr_code", # a string hash
+      #"cc_number", # "1111-2222-3333"
+      #"cc_name", # fake.name()
+      #"cc_expir", # fake.credit_card_security_code(card_type=None)
+  "payment_authorized_at" # datetime
 ])
 
+#
+# GENERATE FAKE DATA
+#
+
+payment_auth_times = []
+
+for _ in range(1,114):
+    dt = fake.date_time_this_year(before_now=True, after_now=False)
+    payment_auth_times.append(dt.strftime('%Y-%m-%d %H:%M:%S'))
+
+payment_auth_times.sort()
+
+#pprint(payment_auth_times)
+
+
+#orders = []
+i = 1
+for payment_auth_time in payment_auth_times:
+    order = {
+        "order_number":i,
+        "payment_authorized_at": payment_auth_time
+    }
+    #orders.append(order)
+    orders_csv.writerow([
+        order["order_number"],
+        order["payment_authorized_at"]
+    ])
+    i+=1
+
+
+
+
+
+
+
+
+
+
+
+#code.interact(local=locals())
 
 
 
@@ -34,13 +86,7 @@ orders_csv.writerow([
 
 
 
-
-
-
-
-
-
-
+'''
 
 seasonal_items = [
     {
@@ -283,3 +329,5 @@ dressings = [
     "sriracha"
 ]
 pprint(dressings)
+
+'''
