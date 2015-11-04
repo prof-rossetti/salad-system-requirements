@@ -3,26 +3,9 @@
 import code # to debug: `code.interact(local=locals())`
 #import os
 from pprint import pprint
-#from random import choice, sample
 import random
 #import json
 #import csv
-
-#rand_item = random.choice(items)
-#print rand_item
-#
-#rand_items = random.sample(items, 3)
-#print rand_items
-
-'''
-    {
-        "name":"_______",
-        "calories": 0000000,
-        "description": "_________",
-        "contains_gluten":False,
-        "vegan_safe":False
-    },
-'''
 
 seasonal_items = [
     {
@@ -146,3 +129,122 @@ salads = seasonal_salads + seasonal_items + signature_salads + signature_grains
 for salad in salads:
     pprint(salad)
     #code.interact(local=locals())
+
+#rand_item = random.choice(items)
+#print rand_item
+#
+#rand_items = random.sample(items, 3)
+#print rand_items
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+# BASES
+# ... Choose up to 2. All bases are gluten-free except quinoa + farro.
+
+salad_bases = [
+    "chopped romaine",
+    "organic mesclun",
+    "organic wild rice",
+    "organic baby spinach",
+    "shredded kale",
+    "organic arugula",
+    "organic quinoa + farro"
+]
+
+pprint(salad_bases)
+
+#
+# INGREDIENTS
+# ... Choose up to 4. Our vegetables are sourced locally when in season. Check your in-store local list for the most up-to-date lineup of farms and seasonal ingredients.
+
+ingredients = [
+    "roasted brussels sprouts",
+    "roasted sweet potatoes",
+    "pears",
+    "apples",
+    "raisins",
+    "raw pecans",
+    "basil",
+    "cilantro",
+    "local apples",
+    "organic chickpeas",
+    "spicy broccoli",
+    "organic carrots",
+    "sprouts",
+    "raw corn",
+    "shredded cabbage",
+    "tomatoes",
+    "raw beets",
+    "spicy quinoa",
+    "cucumbers",
+    "red and green peppers",
+    "red onion",
+    "roasted sweet potatoes",
+    "toasted almonds",
+    "raw seeds",
+    "spicy sunflower seeds",
+    "pita chips", # contains gluten
+    "tortilla chips"
+]
+pprint(ingredients)
+
+
+#
+# PREMIUMS
+# ... Premiums include everything from local cheeses to vegan-friendly proteins.
+
+premiums = [
+    "roasted turkey",
+    "roasted curry cauliflower",
+    "local goat cheese",
+    "local feta",
+    "organic white cheddar",
+    "shaved parmesan",
+    "parmesan crisp",
+    "avocado",
+    "roasted chicken",
+    "citrus shrimp",
+    "hard boiled egg",
+    "bacon",
+    "roasted organic tofu",
+    "baked falafel", # contains gluten
+    "housemade hummus"
+]
+pprint(premiums)
+
+
+#
+# DRESSINGS
+# ... All of our dressings are gluten-free and made in-house.
+
+dressings = [
+    "cranberry vinaigrette",
+    "spicy cashew dressing",
+    "blue cheese dressing",
+    "pesto vinaigrette",
+    "balsamic vinaigrette",
+    "caesar dressing",
+    "cucumber tahini yogurt",
+    "lime cilantro jalapeno vinaigrette",
+    "miso sesame ginger vinaigrette",
+    "carrot chili vinaigrette",
+    "balsamic vinegar",
+    "extra virgin olive oil",
+    "fresh lime squeeze",
+    "fresh lemon squeeze",
+    "sriracha"
+]
+pprint(dressings)
