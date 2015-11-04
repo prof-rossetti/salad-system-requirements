@@ -1,11 +1,46 @@
 # generate_data.py
 
 import code # to debug: `code.interact(local=locals())`
-#import os
+import os
 from pprint import pprint
 import random
 #import json
-#import csv
+import csv
+
+orders_dot_csv = os.path.join(os.path.dirname(__file__), "data/orders.csv")
+print "WRITING TO CSV FILE -- %(file_name)s" % {"file_name": orders_dot_csv}
+os.remove(orders_dot_csv) if os.path.isfile(orders_dot_csv) else "NO CSV FILE DETECTED"
+orders_csv = csv.writer(open(orders_dot_csv, "w"), lineterminator=os.linesep)
+orders_csv.writerow([
+  "order_number",
+  "salad_name", # one of the seasonal or signature salad names, or "CUSTOM"
+  "salad_price_usd"
+])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 seasonal_items = [
     {
