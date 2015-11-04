@@ -37,72 +37,85 @@ seasonal_items = [
     }
 ]
 
-seasonal_salads = [
+salads = [
     {
         "name":"APPLES, PEARS + CHEDDAR",
         "calories": 455,
         "description": "organic mesclun, shredded kale, apples, pears, basil, raw pecans, organic white cheddar, balsamic vinaigrette",
         "contains_gluten":False,
-        "vegan_safe":False
+        "vegan_safe":False,
+        "type":"seasonal"
     },
     {
         "name":"ROASTED TURKEY + BRUSSELS SPROUTS",
         "calories": 445,
         "description": "organic mesclun, chopped romaine, roasted brussels sprouts, roasted sweet potatoes, roasted turkey, cranberry vinaigrette",
         "contains_gluten":False,
-        "vegan_safe":False
+        "vegan_safe":False,
+        "type":"seasonal"
     },
     {
         "name":"CURRY CAULIFLOWER + QUINOA",
         "calories": 550,
         "description": "organic quinoa + farro, organic arugula, roasted curry cauliflower, cilantro, raisins, roasted chicken, sriracha, cucumber tahini yogurt",
         "contains_gluten":True,
-        "vegan_safe":False
-    }
-]
-
-signature_salads = [
+        "vegan_safe":False,
+        "type":"seasonal"
+    },
    {
         "name":"RAD THAI",
         "calories": 375,
         "description": "organic arugula + organic mesclun, sprouts, carrots, shredded cabbage, spicy sunflower seeds, cucumbers, basil, citrus shrimp, spicy cashew dressing",
         "contains_gluten":False,
-        "vegan_safe":False
+        "vegan_safe":False,
+        "type":"signature"
     },
    {
         "name":"KALE CAESAR",
         "calories": 430,
         "description": "shredded kale + chopped romaine, tomatoes, shaved parmesan, parmesan crisp, roasted chicken, fresh lime squeeze, caesar dressing",
         "contains_gluten":False,
-        "vegan_safe":False
+        "vegan_safe":False,
+        "type":"signature"
     },
    {
         "name":"SPICY SABZI",
         "calories": 430,
         "description": "organic baby spinach + shredded kale, spicy quinoa, spicy broccoli, raw beets, carrots, sprouts, basil, roasted organic tofu, sriracha, carrot chili vinaigrette",
         "contains_gluten":False,
-        "vegan_safe":False
+        "vegan_safe":False,
+        "type":"signature"
     },
    {
         "name":"GUACAMOLE GREENS",
         "calories": 540,
         "description": "organic mesclun, tomatoes, red onion, tortilla chips, avocado, roasted chicken, fresh lime squeeze, lime cilantro jalapeno vinaigrette",
         "contains_gluten":False,
-        "vegan_safe":False
+        "vegan_safe":False,
+        "type":"signature"
     },
    {
         "name":"AVOCOBBO",
         "calories": 705,
         "description": "shredded kale + chopped romaine, tomatoes, raw corn, avocado, bacon, egg, roasted chicken, blue cheese dressing",
         "contains_gluten":False,
-        "vegan_safe":False
+        "vegan_safe":False,
+        "type":"signature"
     },
    {
         "name":"HUMMUS TAHINA",
         "calories": 610,
         "description": "shredded kale + chopped romaine, tomatoes, red onion, cucumbers, pita chips, local feta, housemade hummus, baked falafel, cucumber tahini yogurt",
         "contains_gluten":True,
-        "vegan_safe":False
+        "vegan_safe":False,
+        "type":"signature"
+    },
+    {
+        "name":"CUSTOM",
+        "description": "make your own",
+        "contains_gluten":None,
+        "vegan_safe":None,
+        "type":"custom"
     }
 ]
 
@@ -277,16 +290,10 @@ orders_csv.writerow([
 # GENERATE FAKE DATA
 #
 
-salads = seasonal_salads + signature_salads
-
-def name_of(obj):
-    return obj["name"]
-
-salad_names = map(name_of, salads)
-salad_names.append("CUSTOM")
-
-
-
+#def name_of(obj):
+#    return obj["name"]
+#salad_names = map(name_of, salads)
+#salad_names.append("CUSTOM")
 
 payment_auth_times = []
 for _ in range(1,114):
@@ -296,10 +303,10 @@ payment_auth_times.sort()
 
 i = 1
 for payment_auth_time in payment_auth_times:
-    salad_name = random.choice(salad_names)
+    salad = random.choice(salads)
     order = {
         "order_number":i,
-        "salad_name": salad_name,
+        "salad_name": salad["name"],
         "payment_authorized_at": payment_auth_time,
     }
     orders_csv.writerow([
