@@ -10,83 +10,8 @@ from faker import Faker
 fake = Faker()
 
 #
-# CREATE CSV FILE WITH HEADERS
+# DEFINE REAL DATA
 #
-
-orders_dot_csv = os.path.join(os.path.dirname(__file__), "data/orders.csv")
-print "WRITING TO CSV FILE -- %(file_name)s" % {"file_name": orders_dot_csv}
-os.remove(orders_dot_csv) if os.path.isfile(orders_dot_csv) else "NO CSV FILE DETECTED"
-orders_csv = csv.writer(open(orders_dot_csv, "w"), lineterminator=os.linesep)
-orders_csv.writerow([
-  "order_number",
-  #"salad_name", # one of the seasonal or signature salad names, or "CUSTOM"
-  #"salad_price_usd",
-  #"payment_method", # one of "cash","credit-card","app"
-      #"qr_code", # a string hash
-      #"cc_number", # "1111-2222-3333"
-      #"cc_name", # fake.name()
-      #"cc_expir", # fake.credit_card_security_code(card_type=None)
-  "payment_authorized_at" # datetime
-])
-
-#
-# GENERATE FAKE DATA
-#
-
-payment_auth_times = []
-
-for _ in range(1,114):
-    dt = fake.date_time_this_year(before_now=True, after_now=False)
-    payment_auth_times.append(dt.strftime('%Y-%m-%d %H:%M:%S'))
-
-payment_auth_times.sort()
-
-#pprint(payment_auth_times)
-
-
-#orders = []
-i = 1
-for payment_auth_time in payment_auth_times:
-    order = {
-        "order_number":i,
-        "payment_authorized_at": payment_auth_time
-    }
-    #orders.append(order)
-    orders_csv.writerow([
-        order["order_number"],
-        order["payment_authorized_at"]
-    ])
-    i+=1
-
-
-
-
-
-
-
-
-
-
-
-#code.interact(local=locals())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
 
 seasonal_items = [
     {
@@ -205,32 +130,6 @@ signature_grains = [
      }
 ]
 
-salads = seasonal_salads + seasonal_items + signature_salads + signature_grains
-
-for salad in salads:
-    pprint(salad)
-    #code.interact(local=locals())
-
-#rand_item = random.choice(items)
-#print rand_item
-#
-#rand_items = random.sample(items, 3)
-#print rand_items
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 # BASES
 # ... Choose up to 2. All bases are gluten-free except quinoa + farro.
@@ -244,8 +143,6 @@ salad_bases = [
     "organic arugula",
     "organic quinoa + farro"
 ]
-
-pprint(salad_bases)
 
 #
 # INGREDIENTS
@@ -280,8 +177,6 @@ ingredients = [
     "pita chips", # contains gluten
     "tortilla chips"
 ]
-pprint(ingredients)
-
 
 #
 # PREMIUMS
@@ -304,8 +199,6 @@ premiums = [
     "baked falafel", # contains gluten
     "housemade hummus"
 ]
-pprint(premiums)
-
 
 #
 # DRESSINGS
@@ -328,6 +221,109 @@ dressings = [
     "fresh lemon squeeze",
     "sriracha"
 ]
-pprint(dressings)
 
-'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+# CREATE CSV FILE WITH HEADERS
+#
+
+orders_dot_csv = os.path.join(os.path.dirname(__file__), "data/orders.csv")
+print "WRITING TO CSV FILE -- %(file_name)s" % {"file_name": orders_dot_csv}
+os.remove(orders_dot_csv) if os.path.isfile(orders_dot_csv) else "NO CSV FILE DETECTED"
+orders_csv = csv.writer(open(orders_dot_csv, "w"), lineterminator=os.linesep)
+orders_csv.writerow([
+  "order_number",
+  "salad_name",
+  #"salad_price_usd",
+  #"payment_method", # one of "cash","credit-card","app"
+      #"qr_code", # a string hash
+      #"cc_number", # "1111-2222-3333"
+      #"cc_name", # fake.name()
+      #"cc_expir", # fake.credit_card_security_code(card_type=None)
+  "payment_authorized_at" # datetime
+])
+
+#
+# GENERATE FAKE DATA
+#
+
+salads = seasonal_salads + signature_salads
+
+def name_of(obj):
+    return obj["name"]
+
+salad_names = map(name_of, salads)
+salad_names.append("CUSTOM")
+
+
+
+
+payment_auth_times = []
+for _ in range(1,114):
+    dt = fake.date_time_this_year(before_now=True, after_now=False)
+    payment_auth_times.append(dt.strftime('%Y-%m-%d %H:%M:%S'))
+payment_auth_times.sort()
+
+i = 1
+for payment_auth_time in payment_auth_times:
+    salad_name = random.choice(salad_names)
+    order = {
+        "order_number":i,
+        "salad_name": salad_name,
+        "payment_authorized_at": payment_auth_time,
+    }
+    orders_csv.writerow([
+        order["order_number"],
+        order["salad_name"],
+        order["payment_authorized_at"],
+    ])
+    i+=1
+
+
+
+
+
+
+
+
+
+
+
+#rand_item = random.choice(items)
+#print rand_item
+#
+#rand_items = random.sample(items, 3)
+#print rand_items
+
+
+#code.interact(local=locals())
