@@ -8,3 +8,5 @@
  + https://github.com/joke2k/faker
  + http://fake-factory.readthedocs.org/en/latest/providers.html
  + http://www.u.arizona.edu/~erdmann/mse350/topics/list_comprehensions.html
+ + https://order.sweetgreen.com/foggy-bottom/menu
+ + http://www.sarahkayhoffman.com/2011/11/30/6-things-i-do-when-gluten-attacks/
