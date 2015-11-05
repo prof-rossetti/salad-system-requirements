@@ -255,7 +255,7 @@ dressings = [
 
 
 
-
+payment_methods = ["cash","credit-card","mobile-app"]
 
 
 
@@ -275,20 +275,28 @@ print "WRITING TO CSV FILE -- %(file_name)s" % {"file_name": orders_dot_csv}
 os.remove(orders_dot_csv) if os.path.isfile(orders_dot_csv) else "NO CSV FILE DETECTED"
 orders_csv = csv.writer(open(orders_dot_csv, "w"), lineterminator=os.linesep)
 orders_csv.writerow([
-  "order_number",
-  "salad_name",
-  #"salad_price_usd",
-  #"payment_method", # one of "cash","credit-card","app"
-      #"qr_code", # a string hash
-      #"cc_number", # "1111-2222-3333"
-      #"cc_name", # fake.name()
-      #"cc_expir", # fake.credit_card_security_code(card_type=None)
-  "payment_authorized_at" # datetime
+  "menu_item_name",
+  "menu_item_price",
+  "payment_authorized_at",
+  "payment_id",
+  "payment_method",
+  "cc_name",
+  "cc_number",
+  "cc_exp",
+  "payment_amount"
 ])
 
 #
 # GENERATE FAKE DATA
 #
+
+#rand_item = random.choice(items)
+#print rand_item
+#
+#rand_items = random.sample(items, 3)
+#print rand_items
+
+#code.interact(local=locals())
 
 #def name_of(obj):
 #    return obj["name"]
@@ -301,36 +309,43 @@ for _ in range(1,114):
     payment_auth_times.append(dt.strftime('%Y-%m-%d %H:%M:%S'))
 payment_auth_times.sort()
 
-i = 1
+menu_items = salads + seasonal_items + signature_grains
+
+payment_id = 1
 for payment_auth_time in payment_auth_times:
-    salad = random.choice(salads)
-    order = {
-        "order_number":i,
-        "salad_name": salad["name"],
-        "payment_authorized_at": payment_auth_time,
-    }
-    orders_csv.writerow([
-        order["order_number"],
-        order["salad_name"],
-        order["payment_authorized_at"],
-    ])
-    i+=1
+    payment_method = random.choice(payment_methods)
+    credit_card_name = "todo"
+    credit_card_number = "todo"
+    credit_card_expiration = "todo"
+    payment_amount = "todo"
 
+    item_count = 3
+    for _ in range(1,item_count):
+        menu_item = random.choice(menu_items) # todo: skew toward salads?
+        menu_item_price = "todo"
 
+        row = {
+            "menu_item_name": menu_item["name"],
+            "menu_item_price": menu_item_price,
+            "payment_authorized_at": payment_auth_time,
+            "payment_id": payment_id,
+            "payment_method": payment_method,
+            "cc_name": credit_card_name,
+            "cc_number": credit_card_number,
+            "cc_exp": credit_card_expiration,
+            "payment_amount": payment_amount
+        }
+        #orders_csv.writerow(row.values())
+        orders_csv.writerow([
+            row["menu_item_name"],
+            row["menu_item_price"],
+            row["payment_authorized_at"],
+            row["payment_id"],
+            row["payment_method"],
+            row["cc_name"],
+            row["cc_number"],
+            row["cc_exp"],
+            row["payment_amount"]
+        ])
 
-
-
-
-
-
-
-
-
-#rand_item = random.choice(items)
-#print rand_item
-#
-#rand_items = random.sample(items, 3)
-#print rand_items
-
-
-#code.interact(local=locals())
+    payment_id+=1

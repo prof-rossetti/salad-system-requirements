@@ -7,3 +7,4 @@
  + https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior
  + https://github.com/joke2k/faker
  + http://fake-factory.readthedocs.org/en/latest/providers.html
+ + http://www.u.arizona.edu/~erdmann/mse350/topics/list_comprehensions.html
