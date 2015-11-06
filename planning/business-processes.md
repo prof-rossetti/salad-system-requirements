@@ -1,4 +1,18 @@
-# Urban Salad Company
+# Business Processes
+
+The Urban Salad Company runs lunch service each weekday from their downtown location.
+ The lunch menu features salads and other healthy lunch options
+  which include locally sourced and organic ingredients.
+
+## Menu Update Process
+
+The company creates a new core menu each season, and updates the menu on a regular basis to reflect changes in food sourcing and pricing.
+
+When a menu is created or updated,
+ an employee manually removes the large chalkboard from the wall,
+ transcribes menu information onto the chalkboard,
+ and hangs it back up on the wall.
+ Sometimes the employee stands on a stool or ladder to obviate need to lift the chalkboard.
 
 ## Lunch Service Process
 
