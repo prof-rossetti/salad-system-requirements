@@ -11,45 +11,16 @@ from collections import OrderedDict
 from faker import Faker
 fake = Faker()
 
-#
-# CREATE CSV FILE
-#
-
-order_history_dot_csv = os.path.join(os.path.dirname(__file__), "reports/order_history.csv")
-os.remove(order_history_dot_csv) if os.path.isfile(order_history_dot_csv) else "NO CSV FILE DETECTED"
-print "WRITING TO CSV FILE -- %(file_name)s" % {"file_name": order_history_dot_csv}
-order_history_csv = csv.writer(open(order_history_dot_csv, "w"), lineterminator=os.linesep)
+# todo: refactor
 
 #
-# WRITE HEADERS TO CSV
+# MENU INGREDIENTS
 #
 
-headers = [
-  "menu_item_name","menu_item_price",
-  "payment_method","payment_amount",
-  "payment_id","payment_authorized_at",
-  "cc_name","cc_number","cc_exp","qr_code"
-]
-headers.sort()
-order_history_csv.writerow(headers)
-print(headers)
+# todo
 
 #
-# GENERATE CUSTOMERS
-#
-
-customers = []
-for _ in range(1,11):
-    customer = {
-        "cc_name": "%(first)s %(last)s" % {"first": fake.first_name(), "last": fake.last_name() },
-        "cc_number": fake.credit_card_number(card_type=None),
-        "cc_exp": fake.credit_card_expire(start="now", end="+6y", date_format="%m/%y"),
-        "qr_code": fake.ean(length=13)
-    }
-    customers.append(customer)
-
-#
-# IMPORT MENU METADATA
+# MENU ITEMS
 #
 
 custom_items_path = os.path.join(os.path.dirname(__file__), "inputs/menu/items/custom_items.json")
@@ -64,8 +35,48 @@ signature_salads_path = os.path.join(os.path.dirname(__file__), "inputs/menu/ite
 signature_salads = json.loads(open(signature_salads_path).read())["menu_items"]
 menu_items = custom_items + seasonal_items + seasonal_salads + signature_grains + signature_salads
 
+menu_items_dot_csv = os.path.join(os.path.dirname(__file__), "data/menu_items.csv")
+os.remove(menu_items_dot_csv) if os.path.isfile(menu_items_dot_csv) else "NO CSV FILE DETECTED"
+print "WRITING TO CSV FILE -- %(file_name)s" % {"file_name": menu_items_dot_csv}
+menu_items_csv = csv.writer(open(menu_items_dot_csv, "w"), lineterminator=os.linesep)
+menu_item_headers = menu_items[0].keys()
+menu_item_headers.sort()
+menu_items_csv.writerow(menu_item_headers)
+
+for menu_item in menu_items:
+    row = OrderedDict(sorted(menu_item.items()))
+    menu_items_csv.writerow(row.values())
+    print(row.values())
+
 #
-# GENERATE PAYMENTS
+# CUSTOMERS
+#
+
+customers_dot_csv = os.path.join(os.path.dirname(__file__), "data/customers.csv")
+os.remove(customers_dot_csv) if os.path.isfile(customers_dot_csv) else "NO CSV FILE DETECTED"
+print "WRITING TO CSV FILE -- %(file_name)s" % {"file_name": customers_dot_csv}
+customers_csv = csv.writer(open(customers_dot_csv, "w"), lineterminator=os.linesep)
+customer_headers = ["cc_name","cc_number","cc_exp","qr_code"]
+customer_headers.sort()
+customers_csv.writerow(customer_headers)
+
+customers = []
+for _ in range(1,77):
+    customer = {
+        "cc_name": "%(first)s %(last)s" % {"first": fake.first_name(), "last": fake.last_name() },
+        "cc_number": fake.credit_card_number(card_type=None),
+        "cc_exp": fake.credit_card_expire(start="now", end="+6y", date_format="%m/%y"),
+        "qr_code": fake.ean(length=13)
+    }
+    customers.append(customer)
+    row = OrderedDict(sorted(customer.items()))
+    customers_csv.writerow(row.values())
+    print(row.values())
+
+
+
+#
+# PAYMENTS
 #
 
 payment_methods = ["cash","credit-card","mobile-app"]
@@ -88,8 +99,22 @@ for _ in range(1,27):
 payments = sorted(payments, key=itemgetter('authorized_at'))
 
 #
-# WRITE ROWS TO CSV FILE
+# ORDER HISTORY REPORT
 #
+
+order_history_dot_csv = os.path.join(os.path.dirname(__file__), "outputs/reports/order_history.csv")
+os.remove(order_history_dot_csv) if os.path.isfile(order_history_dot_csv) else "NO CSV FILE DETECTED"
+print "WRITING TO CSV FILE -- %(file_name)s" % {"file_name": order_history_dot_csv}
+order_history_csv = csv.writer(open(order_history_dot_csv, "w"), lineterminator=os.linesep)
+order_history_headers = [
+  "menu_item_name","menu_item_price", # "price_overages"
+  "payment_method","payment_amount",
+  "payment_id","payment_authorized_at",
+  "cc_name","cc_number","cc_exp","qr_code"
+]
+order_history_headers.sort()
+order_history_csv.writerow(order_history_headers)
+print(order_history_headers)
 
 for payment in payments:
     item_count = random.choice([1,2,3]) # todo: skew towards 1
