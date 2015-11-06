@@ -1,53 +1,18 @@
-cc_exp,cc_name,cc_number,menu_item_name,menu_item_price,payment_amount,payment_authorized_at,payment_id,payment_method
-todo,todo,todo,ORGANIC BUTTERNUT SQUASH,todo,todo,2015-01-13 17:02:41,1,credit-card
-todo,todo,todo,HARVEST BOWL,todo,todo,2015-01-13 17:02:41,1,credit-card
-todo,todo,todo,ORGANIC BUTTERNUT SQUASH,todo,todo,2015-01-13 20:32:43,2,credit-card
-todo,todo,todo,"APPLES, PEARS + CHEDDAR",todo,todo,2015-01-13 20:32:43,2,credit-card
-todo,todo,todo,KALE CAESAR,todo,todo,2015-01-25 05:54:00,3,cash
-todo,todo,todo,CURRY CAULIFLOWER + QUINOA,todo,todo,2015-01-25 05:54:00,3,cash
-todo,todo,todo,CURRY CAULIFLOWER + QUINOA,todo,todo,2015-01-29 22:02:18,4,credit-card
-todo,todo,todo,KALE CAESAR,todo,todo,2015-01-29 22:02:18,4,credit-card
-todo,todo,todo,EARTH BOWL,todo,todo,2015-01-30 21:12:28,5,mobile-app
-todo,todo,todo,HUMMUS TAHINA,todo,todo,2015-01-30 21:12:28,5,mobile-app
-todo,todo,todo,CURRY CAULIFLOWER + QUINOA,todo,todo,2015-03-03 20:47:10,6,mobile-app
-todo,todo,todo,AVOCOBBO,todo,todo,2015-03-03 20:47:10,6,mobile-app
-todo,todo,todo,SPICY SABZI,todo,todo,2015-03-12 04:28:41,7,credit-card
-todo,todo,todo,ROASTED TURKEY + BRUSSELS SPROUTS,todo,todo,2015-03-12 04:28:41,7,credit-card
-todo,todo,todo,KALE CAESAR,todo,todo,2015-03-25 09:29:15,8,credit-card
-todo,todo,todo,"APPLES, PEARS + CHEDDAR",todo,todo,2015-03-25 09:29:15,8,credit-card
-todo,todo,todo,ROASTED TURKEY + BRUSSELS SPROUTS,todo,todo,2015-04-01 13:15:39,9,mobile-app
-todo,todo,todo,HUMMUS TAHINA,todo,todo,2015-04-01 13:15:39,9,mobile-app
-todo,todo,todo,AVOCOBBO,todo,todo,2015-04-09 00:21:12,10,credit-card
-todo,todo,todo,HUMMUS TAHINA,todo,todo,2015-04-09 00:21:12,10,credit-card
-todo,todo,todo,AVOCOBBO,todo,todo,2015-04-15 00:46:16,11,mobile-app
-todo,todo,todo,CURRY CAULIFLOWER + QUINOA,todo,todo,2015-04-15 00:46:16,11,mobile-app
-todo,todo,todo,HUMMUS TAHINA,todo,todo,2015-04-29 21:32:59,12,cash
-todo,todo,todo,CURRY CAULIFLOWER + QUINOA,todo,todo,2015-04-29 21:32:59,12,cash
-todo,todo,todo,KALE CAESAR,todo,todo,2015-05-26 08:17:39,13,mobile-app
-todo,todo,todo,WILD CHILD,todo,todo,2015-05-26 08:17:39,13,mobile-app
-todo,todo,todo,SPICY SABZI,todo,todo,2015-05-28 11:02:25,14,mobile-app
-todo,todo,todo,HARVEST BOWL,todo,todo,2015-05-28 11:02:25,14,mobile-app
-todo,todo,todo,"APPLES, PEARS + CHEDDAR",todo,todo,2015-05-29 02:43:34,15,mobile-app
-todo,todo,todo,CURRY CAULIFLOWER + QUINOA,todo,todo,2015-05-29 02:43:34,15,mobile-app
-todo,todo,todo,WILD CHILD,todo,todo,2015-05-29 06:10:15,16,cash
-todo,todo,todo,ORGANIC LENTIL CHICKPEA SOUP,todo,todo,2015-05-29 06:10:15,16,cash
-todo,todo,todo,CUSTOM,todo,todo,2015-06-07 04:01:56,17,credit-card
-todo,todo,todo,RAD THAI,todo,todo,2015-06-07 04:01:56,17,credit-card
-todo,todo,todo,SPICY SABZI,todo,todo,2015-06-22 09:58:36,18,cash
-todo,todo,todo,ORGANIC LENTIL CHICKPEA SOUP,todo,todo,2015-06-22 09:58:36,18,cash
-todo,todo,todo,ORGANIC BUTTERNUT SQUASH,todo,todo,2015-06-24 11:32:20,19,cash
-todo,todo,todo,ORGANIC LENTIL CHICKPEA SOUP,todo,todo,2015-06-24 11:32:20,19,cash
-todo,todo,todo,SPICY SABZI,todo,todo,2015-08-22 13:46:24,20,mobile-app
-todo,todo,todo,HARVEST BOWL,todo,todo,2015-08-22 13:46:24,20,mobile-app
-todo,todo,todo,AVOCOBBO,todo,todo,2015-08-24 11:41:01,21,credit-card
-todo,todo,todo,EARTH BOWL,todo,todo,2015-08-24 11:41:01,21,credit-card
-todo,todo,todo,CRANBERRY PEAR FRESCA,todo,todo,2015-09-03 20:20:06,22,cash
-todo,todo,todo,ORGANIC LENTIL CHICKPEA SOUP,todo,todo,2015-09-03 20:20:06,22,cash
-todo,todo,todo,HUMMUS TAHINA,todo,todo,2015-09-04 06:24:30,23,credit-card
-todo,todo,todo,AVOCOBBO,todo,todo,2015-09-04 06:24:30,23,credit-card
-todo,todo,todo,ORGANIC LENTIL CHICKPEA SOUP,todo,todo,2015-09-05 02:05:56,24,cash
-todo,todo,todo,GUACAMOLE GREENS,todo,todo,2015-09-05 02:05:56,24,cash
-todo,todo,todo,AVOCOBBO,todo,todo,2015-09-20 07:26:51,25,mobile-app
-todo,todo,todo,GUACAMOLE GREENS,todo,todo,2015-09-20 07:26:51,25,mobile-app
-todo,todo,todo,RAD THAI,todo,todo,2015-10-19 01:56:58,26,mobile-app
-todo,todo,todo,CURRY CAULIFLOWER + QUINOA,todo,todo,2015-10-19 01:56:58,26,mobile-app
+cc_exp,cc_name,cc_number,menu_item_name,menu_item_price,payment_amount,payment_authorized_at,payment_id,payment_method,qr_code
+02/20,Cinnamon Kshlerin,4477114833429405,HUMMUS TAHINA,9.99,0.0,2015-01-08 19:27:57,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,CRANBERRY PEAR FRESCA,9.99,0.0,2015-02-11 15:04:17,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,HUMMUS TAHINA,9.99,0.0,2015-02-13 06:06:20,1,mobile-app,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,AVOCOBBO,9.99,0.0,2015-02-13 06:06:20,1,mobile-app,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,ORGANIC BUTTERNUT SQUASH,9.99,0.0,2015-02-20 19:08:32,1,mobile-app,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,"APPLES, PEARS + CHEDDAR",9.99,0.0,2015-02-20 19:08:32,1,mobile-app,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,ORGANIC BUTTERNUT SQUASH,9.99,0.0,2015-02-22 02:59:56,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,CRANBERRY PEAR FRESCA,9.99,0.0,2015-03-31 01:43:25,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,EARTH BOWL,9.99,0.0,2015-03-31 01:43:25,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,"APPLES, PEARS + CHEDDAR",9.99,0.0,2015-04-24 13:11:04,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,ROASTED TURKEY + BRUSSELS SPROUTS,9.99,0.0,2015-05-12 10:42:44,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,CURRY CAULIFLOWER + QUINOA,9.99,0.0,2015-05-12 10:42:44,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,WILD CHILD,9.99,0.0,2015-05-24 04:25:33,1,credit-card,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,RAD THAI,9.99,0.0,2015-06-19 23:33:56,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,GUACAMOLE GREENS,9.99,0.0,2015-06-19 23:33:56,1,cash,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,ROASTED TURKEY + BRUSSELS SPROUTS,9.99,0.0,2015-09-01 01:13:29,1,mobile-app,7115934466471
+02/20,Cinnamon Kshlerin,4477114833429405,HARVEST BOWL,9.99,0.0,2015-10-03 23:34:29,1,credit-card,7115934466471
