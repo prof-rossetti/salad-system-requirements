@@ -1,4 +1,5 @@
-premiums = [
+{
+  "premiums" : [
     "roasted turkey",
     "roasted curry cauliflower",
     "local goat cheese",
@@ -14,4 +15,5 @@ premiums = [
     "roasted organic tofu",
     "baked falafel", # contains gluten
     "housemade hummus"
-]
+  ]
+}

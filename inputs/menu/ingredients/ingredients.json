@@ -1,4 +1,5 @@
-ingredients = [
+{
+  "ingredients": [
     "roasted brussels sprouts",
     "roasted sweet potatoes",
     "pears",
@@ -24,6 +25,7 @@ ingredients = [
     "toasted almonds",
     "raw seeds",
     "spicy sunflower seeds",
-    "pita chips", # contains gluten
+    "pita chips", ## contains gluten
     "tortilla chips"
-]
+  ]
+}

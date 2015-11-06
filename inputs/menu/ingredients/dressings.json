@@ -1,4 +1,5 @@
-dressings = [
+{
+  "dressings":[
     "cranberry vinaigrette",
     "spicy cashew dressing",
     "blue cheese dressing",
@@ -14,4 +15,5 @@ dressings = [
     "fresh lime squeeze",
     "fresh lemon squeeze",
     "sriracha"
-]
+  ]
+}

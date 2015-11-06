@@ -6,6 +6,7 @@ from pprint import pprint
 import random
 import json
 import csv
+from collections import OrderedDict
 from faker import Faker
 fake = Faker()
 
@@ -55,6 +56,7 @@ headers = [
 ]
 headers.sort()
 order_history_csv.writerow(headers)
+print(headers)
 
 #
 # WRITE ROWS TO CSV FILE
@@ -82,10 +84,9 @@ for payment_auth_time in payment_auth_times:
             "cc_exp": credit_card_expiration,
             "payment_amount": payment_amount
         }
-        row = order.values()
-        row.sort()
-        print(row)
-        order_history_csv.writerow(row)
+        row = OrderedDict(sorted(order.items()))
+        order_history_csv.writerow(row.values())
+        print(row.values())
 
     payment_id+=1
 
