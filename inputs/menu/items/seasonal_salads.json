@@ -1,0 +1,28 @@
+{
+  "menu_items":[
+    {
+      "name":"APPLES, PEARS + CHEDDAR",
+      "calories": 455,
+      "description": "organic mesclun, shredded kale, apples, pears, basil, raw pecans, organic white cheddar, balsamic vinaigrette",
+      "contains_gluten":false,
+      "vegan_safe":false,
+      "type":"seasonal-salad"
+    },
+    {
+      "name":"ROASTED TURKEY + BRUSSELS SPROUTS",
+      "calories": 445,
+      "description": "organic mesclun, chopped romaine, roasted brussels sprouts, roasted sweet potatoes, roasted turkey, cranberry vinaigrette",
+      "contains_gluten":false,
+      "vegan_safe":false,
+      "type":"seasonal-salad"
+    },
+    {
+      "name":"CURRY CAULIFLOWER + QUINOA",
+      "calories": 550,
+      "description": "organic quinoa + farro, organic arugula, roasted curry cauliflower, cilantro, raisins, roasted chicken, sriracha, cucumber tahini yogurt",
+      "contains_gluten":true,
+      "vegan_safe":false,
+      "type":"seasonal-salad"
+    }
+  ]
+}

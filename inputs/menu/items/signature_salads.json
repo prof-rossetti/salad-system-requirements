@@ -1,0 +1,52 @@
+{
+  "menu_items":[
+    {
+      "name":"RAD THAI",
+      "calories": 375,
+      "description": "organic arugula + organic mesclun, sprouts, carrots, shredded cabbage, spicy sunflower seeds, cucumbers, basil, citrus shrimp, spicy cashew dressing",
+      "contains_gluten":false,
+      "vegan_safe":false,
+      "type":"signature-salad"
+    },
+    {
+      "name":"KALE CAESAR",
+      "calories": 430,
+      "description": "shredded kale + chopped romaine, tomatoes, shaved parmesan, parmesan crisp, roasted chicken, fresh lime squeeze, caesar dressing",
+      "contains_gluten":false,
+      "vegan_safe":false,
+      "type":"signature-salad"
+    },
+    {
+      "name":"SPICY SABZI",
+      "calories": 430,
+      "description": "organic baby spinach + shredded kale, spicy quinoa, spicy broccoli, raw beets, carrots, sprouts, basil, roasted organic tofu, sriracha, carrot chili vinaigrette",
+      "contains_gluten":false,
+      "vegan_safe":false,
+      "type":"signature-salad"
+    },
+    {
+      "name":"GUACAMOLE GREENS",
+      "calories": 540,
+      "description": "organic mesclun, tomatoes, red onion, tortilla chips, avocado, roasted chicken, fresh lime squeeze, lime cilantro jalapeno vinaigrette",
+      "contains_gluten":false,
+      "vegan_safe":false,
+      "type":"signature-salad"
+    },
+    {
+      "name":"AVOCOBBO",
+      "calories": 705,
+      "description": "shredded kale + chopped romaine, tomatoes, raw corn, avocado, bacon, egg, roasted chicken, blue cheese dressing",
+      "contains_gluten":false,
+      "vegan_safe":false,
+      "type":"signature-salad"
+    },
+    {
+      "name":"HUMMUS TAHINA",
+      "calories": 610,
+      "description": "shredded kale + chopped romaine, tomatoes, red onion, cucumbers, pita chips, local feta, housemade hummus, baked falafel, cucumber tahini yogurt",
+      "contains_gluten":true,
+      "vegan_safe":false,
+      "type":"signature-salad"
+    }
+  ]
+}

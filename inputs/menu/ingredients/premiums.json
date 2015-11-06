@@ -1,0 +1,17 @@
+premiums = [
+    "roasted turkey",
+    "roasted curry cauliflower",
+    "local goat cheese",
+    "local feta",
+    "organic white cheddar",
+    "shaved parmesan",
+    "parmesan crisp",
+    "avocado",
+    "roasted chicken",
+    "citrus shrimp",
+    "hard boiled egg",
+    "bacon",
+    "roasted organic tofu",
+    "baked falafel", # contains gluten
+    "housemade hummus"
+]

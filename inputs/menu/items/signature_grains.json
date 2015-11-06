@@ -1,0 +1,28 @@
+{
+  "menu_items":[
+    {
+      "name":"EARTH BOWL",
+      "calories": 775,
+      "description": "quinoa + farro, organic arugula, tomatoes, raw corn, organic chickpeas, spicy broccoli, organic white cheddar, roasted chicken, pesto vinaigrette",
+      "contains_gluten":true,
+      "vegan_safe":false,
+      "type":"signature-grain"
+     },
+    {
+      "name":"HARVEST BOWL",
+      "calories": 685,
+      "description": "organic wild rice + shredded kale, apples, sweet potatoes, toasted almonds, local goat cheese, roasted chicken, balsamic vinaigrette",
+      "contains_gluten":false,
+      "vegan_safe":false,
+      "type":"signature-grain"
+     },
+    {
+      "name":"WILD CHILD",
+      "calories": 545,
+      "description": "organic wild rice + organic baby spinach, cilantro, peppers, raw beets, shredded cabbage, carrots, raw seeds, avocado, miso sesame ginger dressing",
+      "contains_gluten":true,
+      "vegan_safe":false,
+      "type":"signature-grain"
+     }
+  ]
+}

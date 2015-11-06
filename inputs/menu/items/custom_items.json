@@ -1,0 +1,11 @@
+{
+  "menu_items":[
+    {
+      "name":"CUSTOM",
+      "description": "make your own salad or grain bowl",
+      "contains_gluten":null,
+      "vegan_safe":null,
+      "type":"custom"
+    }
+  ]
+}

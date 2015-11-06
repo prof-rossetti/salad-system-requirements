@@ -1,0 +1,28 @@
+{
+  "menu_items":[
+    {
+      "name":"CRANBERRY PEAR FRESCA",
+      "calories": 60,
+      "description": "a refreshing, lightly sweet beverage made of just pears, cranberries, ginger, lemons and water",
+      "contains_gluten":false,
+      "vegan_safe":true,
+      "type":"seasonal-item"
+    },
+    {
+      "name":"ORGANIC BUTTERNUT SQUASH",
+      "calories": "120-180",
+      "description": "a smooth and rich soup to warm you up in cold weather",
+      "contains_gluten":false,
+      "vegan_safe":false,
+      "type":"seasonal-item"
+    },
+    {
+      "name":"ORGANIC LENTIL CHICKPEA SOUP",
+      "calories": "160-240",
+      "description": "this 100% organic soup is made with hearty lentils and chickpeas with diced carrots, onions and celery",
+      "contains_gluten":false,
+      "vegan_safe":true,
+      "type":"seasonal-item"
+    }
+  ]
+}

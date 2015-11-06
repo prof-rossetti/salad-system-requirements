@@ -1,0 +1,53 @@
+cc_exp,cc_name,cc_number,menu_item_name,menu_item_price,payment_amount,payment_authorized_at,payment_id,payment_method
+1,2015-01-02 06:35:51,CURRY CAULIFLOWER + QUINOA,credit-card,todo,todo,todo,todo,todo
+1,2015-01-02 06:35:51,ORGANIC BUTTERNUT SQUASH,credit-card,todo,todo,todo,todo,todo
+2,2015-02-03 15:33:35,SPICY SABZI,credit-card,todo,todo,todo,todo,todo
+2,2015-02-03 15:33:35,EARTH BOWL,credit-card,todo,todo,todo,todo,todo
+3,2015-02-05 19:33:11,CURRY CAULIFLOWER + QUINOA,cash,todo,todo,todo,todo,todo
+3,2015-02-05 19:33:11,HARVEST BOWL,cash,todo,todo,todo,todo,todo
+4,2015-02-06 10:47:08,HUMMUS TAHINA,credit-card,todo,todo,todo,todo,todo
+4,2015-02-06 10:47:08,"APPLES, PEARS + CHEDDAR",credit-card,todo,todo,todo,todo,todo
+5,2015-02-12 10:24:09,ORGANIC LENTIL CHICKPEA SOUP,credit-card,todo,todo,todo,todo,todo
+5,2015-02-12 10:24:09,KALE CAESAR,credit-card,todo,todo,todo,todo,todo
+6,2015-02-28 22:07:36,ORGANIC BUTTERNUT SQUASH,mobile-app,todo,todo,todo,todo,todo
+6,2015-02-28 22:07:36,HARVEST BOWL,mobile-app,todo,todo,todo,todo,todo
+7,2015-03-23 09:50:57,EARTH BOWL,mobile-app,todo,todo,todo,todo,todo
+7,2015-03-23 09:50:57,AVOCOBBO,mobile-app,todo,todo,todo,todo,todo
+8,2015-04-20 16:45:29,EARTH BOWL,credit-card,todo,todo,todo,todo,todo
+8,2015-04-20 16:45:29,"APPLES, PEARS + CHEDDAR",credit-card,todo,todo,todo,todo,todo
+9,2015-04-26 03:19:26,CURRY CAULIFLOWER + QUINOA,mobile-app,todo,todo,todo,todo,todo
+9,2015-04-26 03:19:26,AVOCOBBO,mobile-app,todo,todo,todo,todo,todo
+10,2015-04-27 20:10:15,HARVEST BOWL,credit-card,todo,todo,todo,todo,todo
+10,2015-04-27 20:10:15,HUMMUS TAHINA,credit-card,todo,todo,todo,todo,todo
+11,2015-05-08 02:56:02,CRANBERRY PEAR FRESCA,cash,todo,todo,todo,todo,todo
+11,2015-05-08 02:56:02,HARVEST BOWL,cash,todo,todo,todo,todo,todo
+12,2015-05-18 13:51:08,GUACAMOLE GREENS,mobile-app,todo,todo,todo,todo,todo
+12,2015-05-18 13:51:08,HARVEST BOWL,mobile-app,todo,todo,todo,todo,todo
+13,2015-07-02 13:24:32,ORGANIC BUTTERNUT SQUASH,credit-card,todo,todo,todo,todo,todo
+13,2015-07-02 13:24:32,ORGANIC LENTIL CHICKPEA SOUP,credit-card,todo,todo,todo,todo,todo
+14,2015-07-14 12:01:26,EARTH BOWL,credit-card,todo,todo,todo,todo,todo
+14,2015-07-14 12:01:26,EARTH BOWL,credit-card,todo,todo,todo,todo,todo
+15,2015-07-18 10:42:51,HARVEST BOWL,credit-card,todo,todo,todo,todo,todo
+15,2015-07-18 10:42:51,CRANBERRY PEAR FRESCA,credit-card,todo,todo,todo,todo,todo
+16,2015-07-24 03:10:13,HUMMUS TAHINA,cash,todo,todo,todo,todo,todo
+16,2015-07-24 03:10:13,CRANBERRY PEAR FRESCA,cash,todo,todo,todo,todo,todo
+17,2015-07-28 18:24:19,KALE CAESAR,cash,todo,todo,todo,todo,todo
+17,2015-07-28 18:24:19,CRANBERRY PEAR FRESCA,cash,todo,todo,todo,todo,todo
+18,2015-07-29 02:16:30,CURRY CAULIFLOWER + QUINOA,mobile-app,todo,todo,todo,todo,todo
+18,2015-07-29 02:16:30,CUSTOM,mobile-app,todo,todo,todo,todo,todo
+19,2015-08-03 15:15:32,GUACAMOLE GREENS,credit-card,todo,todo,todo,todo,todo
+19,2015-08-03 15:15:32,HARVEST BOWL,credit-card,todo,todo,todo,todo,todo
+20,2015-08-19 04:59:38,ORGANIC BUTTERNUT SQUASH,credit-card,todo,todo,todo,todo,todo
+20,2015-08-19 04:59:38,SPICY SABZI,credit-card,todo,todo,todo,todo,todo
+21,2015-08-30 22:57:50,SPICY SABZI,credit-card,todo,todo,todo,todo,todo
+21,2015-08-30 22:57:50,HUMMUS TAHINA,credit-card,todo,todo,todo,todo,todo
+22,2015-09-11 10:38:42,KALE CAESAR,mobile-app,todo,todo,todo,todo,todo
+22,2015-09-11 10:38:42,EARTH BOWL,mobile-app,todo,todo,todo,todo,todo
+23,2015-10-01 13:28:37,CURRY CAULIFLOWER + QUINOA,cash,todo,todo,todo,todo,todo
+23,2015-10-01 13:28:37,SPICY SABZI,cash,todo,todo,todo,todo,todo
+24,2015-10-21 12:56:12,EARTH BOWL,cash,todo,todo,todo,todo,todo
+24,2015-10-21 12:56:12,"APPLES, PEARS + CHEDDAR",cash,todo,todo,todo,todo,todo
+25,2015-10-26 12:49:55,WILD CHILD,mobile-app,todo,todo,todo,todo,todo
+25,2015-10-26 12:49:55,ORGANIC LENTIL CHICKPEA SOUP,mobile-app,todo,todo,todo,todo,todo
+26,2015-10-30 11:01:58,WILD CHILD,credit-card,todo,todo,todo,todo,todo
+26,2015-10-30 11:01:58,RAD THAI,credit-card,todo,todo,todo,todo,todo
