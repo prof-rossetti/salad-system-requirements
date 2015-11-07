@@ -1,5 +1,9 @@
-# Conceptual Design
+# Salad System
 
-## Entity Relationships
+## Conceptual Design
 
-### Customer/Order
+### Entity Relationships
+
+ + Employee/ Location
+ + Employee/ Region
+ + Menu/ Menu Item

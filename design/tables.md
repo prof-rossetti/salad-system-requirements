@@ -2,11 +2,13 @@
 
 Legend:
 
-PK = Primary Key
-FK = Foreign Key
-CFK = Composite Foreign Key (indicates polymorphism)
-INDX = Regular Index
-VA = Virtual Attribute (calculated, not stored)
+acronym | meaning
+--- | ---
+PK | Primary Key
+FK | Foreign Key
+CFK | Composite Foreign Key (indicates polymorphism)
+INDX | Regular Index
+VA | Virtual Attribute (calculated, not stored)
 
 ## Tables
 
@@ -65,9 +67,9 @@ VA = Virtual Attribute (calculated, not stored)
  + `id`
  + `name`
  + `description`
- + `calories` (string, assumes for display purposes and not for calculation purposes)
- + `gluten_free` (VA calculated to be false if any component ingredient is false)
- + `vegan_safe` (VA false if any component ingredient is false)
+ + `calories` (VA calculated as the sum of all component ingredient `calories`)
+ + `gluten_free` (VA calculated to be false if any component ingredient `gluten_free` is false)
+ + `vegan_safe` (VA false if any component ingredient `vegan_safe` is false)
 
 #### `item_default_ingredients`
 

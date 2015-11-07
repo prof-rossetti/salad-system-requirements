@@ -1,14 +1,6 @@
-# Business Processes
+# Urban Lunch Company
 
-### Menu Update Process
-
-The company creates a new core menu each season, and updates the menu on a regular basis to reflect changes in food sourcing and pricing.
-
-When a menu is created or updated,
- an employee manually removes the large chalkboard from the wall,
- transcribes menu information onto the chalkboard,
- and hangs it back up on the wall.
- Sometimes the employee stands on a stool or ladder to obviate need to lift the chalkboard.
+## Business Processes
 
 ### Lunch Service Process
 

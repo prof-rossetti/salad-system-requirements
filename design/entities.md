@@ -1,35 +1,33 @@
-# Conceptual Design
+# Salad System
 
-## Entities
+## Conceptual Design
 
- + Region
- + Location
+### Entities
+
  + Employee
-   + Order-preparer/Salad-maker
-   + Payment Station Attendant
-   + Region Manager
+ + Location
+ + Region
  + Menu
  + Menu Item
  + Menu Item Role (join entity)
- + Menu Ingredient
  + Menu Item Default Ingredient (join table)
+ + Menu Ingredient
+ + Menu Ingredient Role (join entity)
  + Customer
  + Order
  + Ordered Item (join entity)
- + Payment Method (super-type representing one of: "Cash","Credit Card","Mobile App","Legacy Loyalty Card","Gift Card")
+ + Payment Method (super-type)
  + Customer Profile
  + Customer Dietary Preference
  + Customer Credit Card
  + Credit Card
 
-### Customer
+An `employee` is a person who
+  has entered into a contractual labor agreement with the company to
+  exchange labor and other services for wages.
 
-### Payment
+A `location` represents a physical street address where the company operates lunch service.
 
-### Order
+A `region` is a collection of geographically-related locations.
 
-### Ordered Item
-
-### Menu Item
-
-### Menu Ingredient
+A `menu` communicates food and drink options available during lunch service.
