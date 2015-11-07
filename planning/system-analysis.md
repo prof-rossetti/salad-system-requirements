@@ -1,27 +1,6 @@
 # System Analysis
 
-## Business Problem
-
-The Urban Salad Company's menu update process costs employee time and company resources.
-
-Past manual errors in denoting menu item gluten content
- have led to customer allergy attacks and pending lawsuits.
-
-The Urban Lunch Company has an opportunity
-  to avoid legal fees and
-  to improve the menu update process
-  by transitioning from
-   a hand-written menu board
-   to a wall-mounted digital display.
-
-
-
-
-
-
-## System Solution
-
-### System Justification
+## System Justification
 
 Although the "Salad System" implementation will cost thousands of dollars
  in upfront and ongoing software and hardware costs,
@@ -29,7 +8,7 @@ Although the "Salad System" implementation will cost thousands of dollars
   by avoiding hundreds of thousands of dollars in unnecessary legal fees
   and thousands of dollars in payroll costs.
 
-### System Objectives
+## System Objectives
 
  1. Display a digital menu with accuracy
  2. Automate the menu update process
@@ -37,7 +16,7 @@ Although the "Salad System" implementation will cost thousands of dollars
  4. Capture and store a comprehensive history of orders and payments
  5. Support executives in decision-making
 
-### Information Requirements
+## Information Requirements
 
 For each order,
  executives are only interested in knowing
@@ -47,7 +26,7 @@ For each order,
     as applicable.
  Executives track ingredient supply and consumption levels using a separate system.
 
-#### Information Inputs
+### Information Inputs
 
 1. Menu Metadata
 2. Order Details
@@ -61,7 +40,7 @@ To store a comprehensive transaction history,
 
 To process customer payments, in some cases the system requires customer credit card information.
 
-#### Information Outputs
+### Information Outputs
 
 1. Digital Menu
 2. Order and Payment Transaction History Report

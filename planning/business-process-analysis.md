@@ -1,10 +1,6 @@
 # Business Processes
 
-The Urban Salad Company runs lunch service each weekday from their downtown location.
- The lunch menu features salads and other healthy lunch options
-  which include locally sourced and organic ingredients.
-
-## Menu Update Process
+### Menu Update Process
 
 The company creates a new core menu each season, and updates the menu on a regular basis to reflect changes in food sourcing and pricing.
 
@@ -14,15 +10,15 @@ When a menu is created or updated,
  and hangs it back up on the wall.
  Sometimes the employee stands on a stool or ladder to obviate need to lift the chalkboard.
 
-## Lunch Service Process
+### Lunch Service Process
 
-### Customer Intake Phase
+#### Customer Intake Phase
 
 Customers enter the store through two glass doors.
 
 Customers wait in line to order a salad, unless there is no line.
 
-### Salad Ordering Phase
+#### Salad Ordering Phase
 
 Customers pass a printed menu hanging on the wall as they move through the queue.
   The menu lists all available salad options, including a number of seasonal salads and signature salads, as well as the option to create a custom salad from a number of listed ingredients.
@@ -35,7 +31,7 @@ Usually a single salad-maker will prepare all the salads for a single customer b
 
 Some customers order pre-prepared signature salads or non-salad items (e.g. soft serve yogurt, bottled water, hard-boiled eggs, and soft drinks). Customers who do not require salad preparation are not required to wait in the salad preparation line, and either wait in a different line, or skip to the payment phase.
 
-### Salad Preparation Phase
+#### Salad Preparation Phase
 
 The salad-maker prepares a salad to fulfill the order.
 
@@ -47,7 +43,7 @@ Customers who order custom salads participate in a similar process of
  providing verbal preparation instructions to the salad-maker
  and responding to information about price overages.
 
-### Payment Phase
+#### Payment Phase
 
 When the salad-maker is done preparing the salad, the customer proceeds to the payment phase.
 
@@ -63,7 +59,7 @@ Some customers pay with cash, some with credit cards, and some with a mobile app
 
 The customer presents payment to the payment attendant, and upon authorization of successful payment, the attendant hands a printed invoice to the customer.
 
-### Customer Exit Phase
+#### Customer Exit Phase
 
 After paying for their salad(s), the customer(s) either
  sit down inside the store to eat,

@@ -1,7 +1,6 @@
-# Salad Data
+# Salad System
 
-Generates a .csv file of denormalized data
- representing salad orders at an urban lunch company.
+An information system for an urban lunch company.
 
 ## Prerequisites
 
@@ -22,11 +21,15 @@ pip install -r requirements.txt
 
 ## Usage
 
-Generate salad data.
+Generate menu and usage data.
 
 ```` sh
 python generate_data.py
 ````
+
+Start a server.
+
+View at localhost:8888.
 
 ## Contributing
 
