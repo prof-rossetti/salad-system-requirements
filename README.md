@@ -1,38 +1,24 @@
 # Salad System
 
-An information system for an urban lunch company.
+An example information system for an urban lunch company.
 
-## Prerequisites
+System Development Processes:
 
-Clone this repository:
+ + [Planning and Analysis](/requirements)
+ + [Design](/design)
+ + Implementation
 
-```` sh
-git clone git@github.com:gwu-business/salad-data.git
-cd salad-data/
-````
+System Components:
 
-Install python and pip.
-
-Install package dependencies:
-
-```` sh
-pip install -r requirements.txt
-````
-
-## Usage
-
-Generate menu and usage data.
-
-```` sh
-python generate_data.py
-````
-
-Start a server.
-
-View at localhost:8888.
++ [Datastore](/data)
++ [Software](/software)
 
 ## Contributing
 
-Issues and Pull Requests are welcome.
+Contribute by creating [issues](https://github.com/gwu-business/salad-system/issues) and [pull requests](https://github.com/gwu-business/salad-system/pulls).
 
 ## [License](LICENSE.md)
+
+Contains fictitious business analyses and narratives based on one or more urban lunch companies found in cities across the United States.
+
+Menu data based on content copyright of [sweetgreen](http://sweetgreen.com/menu/?region=dc-md-va), used for instructional and demonstration purposes.

@@ -1,8 +1,8 @@
-# Urban Salad Company
+# Urban Lunch Company
 
 ## Business Description
 
-The Urban Salad Company runs lunch service each weekday
+The Urban Lunch Company runs lunch service each weekday
  from multiple locations across the United States.
 
 The lunch menu features salads and other healthy lunch options
