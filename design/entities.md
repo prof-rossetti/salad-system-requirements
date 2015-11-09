@@ -2,6 +2,10 @@
 
 ## Conceptual Design
 
+This document represents work product from initial database planning and design processes.
+
+The most recent [Entity Relationship Diagram (ERD)]([diagrams](diagrams/) supersedes this planning document.
+
 ### Entities
 
  + Employee

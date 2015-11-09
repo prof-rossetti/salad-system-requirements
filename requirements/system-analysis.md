@@ -6,7 +6,10 @@
  * Automate the menu update process
  * Process payments
  * Capture and store a comprehensive history of orders and payments
- * Support executives in decision-making
+ * Connect the payment and ordering system with the procurement and usage system
+ * Support regional manager decision-making
+
+
 
 ## System Justification
 
@@ -17,13 +20,15 @@
    and thousands of dollars in payroll costs.
 
 
-## System Information Requirements
+
+
+## Information Requirements
 
 ### Information Inputs
 
 #### Menu Metadata
 
- The company currently describes each menu item and ingredient,
+The company currently describes each menu item and ingredient,
  and categorizes each in terms of its calorie count, gluten composition, and vegan-friendliness. The system needs this menu item metadata to properly display the menu.
 
 #### Order Details
@@ -35,9 +40,21 @@ To store a comprehensive transaction history,
 
 To process customer payments, in some cases the system requires customer credit card information.
 
+
+
+
+
+
+
+
+
+
 ### Information Outputs:
 
-  1. Menu Report (for publishing)
+  1. Menu (for publishing)
   * Digital Menu (for storefronts)
-  * Order and Payment Transaction History Report (for mobile app users)
-  * Order Summary Charts (for regional managers)
+  * Customer Transaction History (for mobile app users)
+  * Sales Trends (for regional managers and executives)
+    + by location
+    + by region
+    + by day of the week

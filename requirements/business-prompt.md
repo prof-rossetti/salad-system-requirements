@@ -49,7 +49,7 @@ The food preparer prepares the order according to the customer's instructions.
 
 Each customer must pay for his/her order before picking it up from the payment attendant.
 
-Customers may present payments of cash, credit card, gift card, loyalty rewards card, or mobile application QR code.
+Customers may present payment in cash, credit card, gift card, loyalty rewards card, or mobile application QR code.
  A customer may pay for an order using only one method.
  If one payment method is denied, the customer has an opportunity to present an alternate method.
 

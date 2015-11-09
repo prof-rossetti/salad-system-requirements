@@ -1,4 +1,10 @@
-# Physical Design
+# Salad System
+
+## Physical Design
+
+This document represents work product from initial database planning and design processes.
+
+The most recent [Entity Relationship Diagram (ERD)]([diagrams](diagrams/) supersedes this planning document.
 
 Legend:
 
@@ -10,15 +16,27 @@ CFK | Composite Foreign Key (indicates polymorphism)
 INDX | Regular Index
 VA | Virtual Attribute (calculated, not stored)
 
-## Tables
+### Tables
 
-#### `regions`
+##### `regions`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `id` (PK)
  + `name`
  + `manager_id` (FK referencing `employees` table)
 
-#### `locations`
+##### `locations`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `id` (PK)
  + `region_id` (FK referencing `regions` table)
@@ -32,37 +50,67 @@ VA | Virtual Attribute (calculated, not stored)
  + `weekday_lunch_service_starts_at` (assumes lunch service only during weekdays and same hours each day)
  + `weekday_lunch_service_ends_at` (assumes lunch service only during weekdays and same hours each day)
 
-#### `employees`
+##### `employees`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `id` (PK)
  + `first_name`
  + `last_name`
  + `ssn`
 
-#### `shifts` (out of scope)
+##### `shifts` (out of scope)
 
-#### `menus`
+##### `menus`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `id` (PK)
  + `region_id` (FK referencing `regions` table)
  + `effective_start`
  + `effective_end`
 
-#### `menus_items` (or `menu_item_roles`)
+##### `menus_items` (or `menu_item_roles`)
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `menu_id` (FK referencing `menus` table)
  + `item_id` (FK referencing `items` table)
  + `item_role`
  + `item_default_price`
 
-#### `menus_ingredients` (or `menu_ingredient_roles`)
+##### `menus_ingredients` (or `menu_ingredient_roles`)
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
   + `menu_id`
   + `ingedient_id`
   + `ingedient_role`
   + `ingedient_overage_price`
 
-#### `items`
+##### `menu_items`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `id`
  + `name`
@@ -71,12 +119,24 @@ VA | Virtual Attribute (calculated, not stored)
  + `gluten_free` (VA calculated to be false if any component ingredient `gluten_free` is false)
  + `vegan_safe` (VA false if any component ingredient `vegan_safe` is false)
 
-#### `item_default_ingredients`
+##### `menu_item_default_ingredients`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `item_id`
  + `ingredient_id`
 
-#### `ingredients`
+##### `menu_ingredients`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `id`
  + `name`
@@ -84,7 +144,13 @@ VA | Virtual Attribute (calculated, not stored)
  + `gluten_free`
  + `vegan_safe`
 
-#### `orders`
+##### `orders`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `id`
  + `type` ("Online" or "In-store")
@@ -100,7 +166,13 @@ VA | Virtual Attribute (calculated, not stored)
 
 todo: order for pickup or delivery? (delivery instructions)
 
-#### `ordered_items`
+##### `ordered_items`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `order_id`
  + `menu_item_id`
@@ -108,7 +180,13 @@ todo: order for pickup or delivery? (delivery instructions)
  + `price_overages` (optional, if)
  + `total_cost` (VA calculated from the normal menu item price plus any price overages)
 
-#### `credit_cards`
+##### `credit_cards`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `credit_card_number`
  + `cvv`
@@ -117,7 +195,13 @@ todo: order for pickup or delivery? (delivery instructions)
  + `zip_code` (billing)
  + `cardholder_name`
 
-#### `customer_profiles`
+##### `customer_profiles`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `id`
  + `first_name`
@@ -129,7 +213,13 @@ todo: order for pickup or delivery? (delivery instructions)
  + `password`
  + `qr_code`
 
-#### `customer_dietary_preferences`
+##### `customer_dietary_preferences`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
   + `customer_profile_id`
   + `vegetarian`
@@ -137,7 +227,13 @@ todo: order for pickup or delivery? (delivery instructions)
   + `gluten_free`
   + `nut_free`
 
-#### `customer_credit_cards`
+##### `customer_credit_cards`
+
+todo | table | here
+--- | --- | ---
+--- | --- | ---
+
+Attributes:
 
  + `customer_id`
  + `credit_card_number`
