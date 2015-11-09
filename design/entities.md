@@ -4,7 +4,7 @@
 
 This document represents work product from initial database planning and design processes.
 
-The most recent [Entity Relationship Diagram (ERD)]([diagrams](diagrams/) supersedes this planning document.
+The most recent [Entity Relationship Diagram (ERD)](diagrams/) supersedes this planning document.
 
 ### Entities
 
