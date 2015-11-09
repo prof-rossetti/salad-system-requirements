@@ -4,8 +4,6 @@
 
 ### Menu Update Process
 
-When a menu is created or updated,
- an employee manually removes the large chalkboard from the wall,
- transcribes menu information onto the chalkboard,
- and hangs it back up on the wall.
- Sometimes the employee stands on a stool or ladder to obviate need to lift the chalkboard.
+After the regional manager creates a new menu and executives sign-off on the menu, the company prints thousands of paper copies to be distributed to customers in each location, as well as two sets of wall-sized menu boards (one primary and one back-up) to be hung in each location.
+
+After printing, the company arranges for a rental van to transport the menu boards to each location, and pays employees overtime to receive and install the new menu.
