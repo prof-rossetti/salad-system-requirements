@@ -33,7 +33,7 @@ cost savings (benefits) | 2015 | 2016 | 2017 | 2018 | NPV
 --- | --- | --- | --- | --- | ---
 Legal Fees (10K settlement per each of 6 average annual allergen lawsuits) | $60,000 |  $60,000 | $60,000 | $60,000 | todo: NPV
 Menu Update Process Efficiencies | $5,000 |  $5,000 | $5,000 | $5,000 | todo: NPV
-|  |  |  | Total: | todo: NPV
+|  |  |  | | Total: | todo: NPV
 
 
 
