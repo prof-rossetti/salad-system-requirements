@@ -1,16 +1,13 @@
-# Salad System Planning
+# Salad System Requirements
 
-Example information system analysis and planning documents.
+Initial information system planning and design documents.
 
-System Development Processes:
-
- + [Planning and Analysis](/requirements)
+ + [Requirements](/requirements)
  + [Design](/design)
- + Implementation
 
 ## Contributing
 
-Contribute by creating [issues](https://github.com/gwu-business/salad-system-planning/issues) and [pull requests](https://github.com/gwu-business/salad-system-planning/pulls).
+Contribute by creating [issues](https://github.com/gwu-business/salad-system-requirements/issues) and [pull requests](https://github.com/gwu-business/salad-system-requirements/pulls).
 
 ## [License](LICENSE.md)
 
