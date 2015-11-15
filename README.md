@@ -1,15 +1,12 @@
 # Salad System Requirements
 
-Initial information system planning and design documents.
-
- + [Requirements](/requirements)
- + [Design](/design)
+Example information system [planning](/requirements) and [design](/design) documents.
 
 ## Contributing
 
 Contribute by creating [issues](https://github.com/gwu-business/salad-system-requirements/issues) and [pull requests](https://github.com/gwu-business/salad-system-requirements/pulls).
 
-## [License](LICENSE.md)
+## License
 
 Contains fictitious business analyses and narratives based on one or more urban lunch companies found in cities across the United States.
 
