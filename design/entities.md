@@ -35,3 +35,5 @@ A `location` represents a physical street address where the company operates lun
 A `region` is a collection of geographically-related locations.
 
 A `menu` communicates food and drink options available during lunch service.
+
+... etc.

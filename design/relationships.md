@@ -38,3 +38,9 @@ A `location` has one or more employees working as `food_preparers` at any given 
 An employee called the payment-station-attendant, or `salesperson`, attends one of the payment stations at zero or many `locations`, although not more than one at the same time.
 
 A `location` has one or more `salespeople` operating a payment station at any time during lunch service, perhaps with more than one operating in the same location at the same time.
+
+
+
+
+
+... etc.
