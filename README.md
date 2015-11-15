@@ -1,6 +1,6 @@
-# Salad System
+# Salad System Planning
 
-An example information system for an urban lunch company.
+Example information system analysis and planning documents.
 
 System Development Processes:
 
@@ -8,14 +8,9 @@ System Development Processes:
  + [Design](/design)
  + Implementation
 
-System Components:
-
-+ [Datastore](/data)
-+ [Software](/software)
-
 ## Contributing
 
-Contribute by creating [issues](https://github.com/gwu-business/salad-system/issues) and [pull requests](https://github.com/gwu-business/salad-system/pulls).
+Contribute by creating [issues](https://github.com/gwu-business/salad-system-planning/issues) and [pull requests](https://github.com/gwu-business/salad-system-planning/pulls).
 
 ## [License](LICENSE.md)
 
